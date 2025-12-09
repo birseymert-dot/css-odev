@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: Tahoma, sans-serif;
+}
+
+/* Üstteki A–E kutuları */
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+/* Ortak kutu özellikleri */
+.box {
+  width: 100px;
+  height: 150px;
+  background-color: #eeeff2;
+  border-left: 10px dotted #D0D0FF;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* Üzerine gelince */
+.box:hover {
+  background-color: yellow;
+  color: goldenrod;
+}
+
+/* F kutusu özel: sağ alt köşe */
+.final {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
